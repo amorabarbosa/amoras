@@ -1,0 +1,43 @@
+body{
+    background-image: url('https://image.freepik.com/fotos-gratis/gradiente-de-rosa-pastel-degrade-foto-abstrata-desfocada-linhas-suaves-cor-de-fundo_49683-4158.jpg');
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 100vh;
+        
+  }
+  
+  .menu {
+    background-color: whitesmoke;
+    
+  }
+  
+  .menu ul {
+    display: flex;
+      justify-content: space-around;
+    
+  }
+  .menu li{
+    list-style: none;
+    
+  }
+  a{
+    color: teal;
+    text-decoration: none;
+    
+  }
+  
+  a:hover{
+    text-decoration: underline;
+    
+  }
+  .site-subtitle,
+  .site-title{
+    color: darkslateblue;
+    text-align: center;
+    
+  }
+  
+  .site-subtitle{
+    font-style: italic;
+  }
+  
