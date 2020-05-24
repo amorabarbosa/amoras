@@ -1,43 +1,247 @@
+/*Reset do site-soft reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
 body{
-    background-image: url('https://image.freepik.com/fotos-gratis/gradiente-de-rosa-pastel-degrade-foto-abstrata-desfocada-linhas-suaves-cor-de-fundo_49683-4158.jpg');
-    background-size: auto 100vh;
-    font-family: Arial;
+    background-image: url('../img/fundo\ cosmos.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'Inconsolata', monospace;
     height: 100vh;
+    font-size: 10px;
         
+  }
+
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  @media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+  /* breakpoint */
+@media (min-width: 1200px) {
+  body {
+   
+    font-size: 20px;
+  }
+}
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .menu {
-    background-color: whitesmoke;
-    
+    background-color:mediumpurple;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index:1;
   }
-  
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+  }
   .menu ul {
     display: flex;
       justify-content: space-around;
     
   }
   .menu li{
-    list-style: none;
-    
+    list-style: none;  
+  }
+  .menu a:active,
+  .menu a:hover {
+    background-color: darkmagenta;
+    color: seashell;
   }
   a{
-    color: teal;
+    color:seashell;
     text-decoration: none;
     
   }
-  
+  /*
   a:hover{
     text-decoration: underline;
     
   }
+*/
+.titulo {
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+  animation: 2s linear 500ms animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
   .site-subtitle,
   .site-title{
     color: darkslateblue;
     text-align: center;
-    
   }
   
+  .site-title{
+    font-size: 4em;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
   .site-subtitle{
     font-style: italic;
+    font-family: 'Caveat', cursive;
+    line-height: 1.8em;
+  }
+
+.sobre,  
+.contato,
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+}
+
+.sobre h2,
+.contato h2,
+.portfolio h2{
+  color: darkslateblue;
+  font-family: 'Caveat', cursive;
+  font-size: 1.8em;
+  margin-bottom: 1.5em;
+}
+.sobre p {
+  color: darkblue;
+  font-style: oblique;
+  text-indent: 1.2em;
+  margin-bottom: 0em;
+  text-align: justify;
+}
+
+.sobre a {
+  color: white;
+  text-decoration: underline;
+}
+
+.sobre a:hover {
+  background-color: cyan;
+  text-decoration: none;
+  color: magenta;
+}
+
+.sobre .avatar {
+  clip-path: circle(50% at 50% 50%);
+  margin-left: 1em;
+}
+
+@media (min-width: 600px) {
+  .sobre .avatar {     
+    clip-path: circle(50% at 50% 50%);
+    float: right;
+  }
+}
+
+.portfolio .grid {
+  display:grid;
+  gap: 2em;
+  
+}
+
+@media (min-width: 560x) {
+  .portfolio .grid{
+      grid-template-columns: 240px 240px;
+  }
+} 
+
+@media (min-width: 880px) {
+  .portfolio .grid{
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+} 
+.flip-card {
+  height: 220px;
+  perspective: 1000px;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+
+.card-front, 
+.card-back {
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(230, 196, 196, 0.527);
+  height: 220px;
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+.portfolio figure{
+  text-align: center;
+}
+
+  .img-portfolio{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    object-position:  center;
+    transition: transform 500ms;
+  }
+
+  .contato .icons {
+    text-align: center;
   }
   
+  .contato a {
+    color: whitesmoke;
+    font-size: 4em;
+    transition: text-shadow 1s;
+  }
+  
+  .contato a:active,
+  .contato a:hover  {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+  }

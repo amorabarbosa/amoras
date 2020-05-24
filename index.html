@@ -1,21 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Amora Barbosa</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amora Barbosa</title>
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Jost:wght@300;600&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/650afa13eb.js" crossorigin="anonymous"></script>
+  <script
+      src="https://kit.fontawesome.com/6d6952c5be.js"
+      crossorigin="anonymous"
+   ></script>
 </head>
 <body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Amora Barbosa Pereira</h1>
-        <h2 class="site-subtitle">Administradora e estudante de JS e CSS</h2>
-      </header> 
-</body>
+  <header>
+    <nav class="menu">
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="titulo">
+      <h1 class="site-title">Amora Barbosa Pereira</h1>
+      <h2 class="site-subtitle">Administradora</h2>
+      <h2 class="site-subtitle">Testando novos aprendizados</h2>
+    </div> 
+  </header>
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+
+    <figure class="avatar">
+      <img src="./minhas img/eu.jpg" alt="Amora Barbosa">
+    </figure>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem
+      atque architecto, odit doloremque consectetur vero! Aut fugit neque
+      sequi id non rerum facilis incidunt explicabo. Officia beatae vitae
+      laudantium!
+    </p>
+
+    <p>
+      Tenetur dicta rem ut aliquid quo eos non expedita impedit. Ipsa sapiente
+      corrupti iusto eum similique voluptatum magni velit sit ab, vitae quas,
+      perspiciatis excepturi, vel quaerat itaque dicta repudiandae?
+    </p>
+
+    <p>
+      Unde necessitatibus fugiat similique aperiam ipsa voluptatum ex commodi
+      repellendus! Sequi libero accusantium facere quis, dolores voluptate
+      itaque distinctio natus iure, quibusdam eaque. Laborum incidunt nesciunt
+      facere aperiam quibusdam inventore.
+    </p>
+    <p>
+      Unde necessitatibus fugiat similique aperiam ipsa voluptatum ex commodi
+      repellendus! Sequi libero accusantium facere quis, dolores voluptate
+      itaque distinctio natus iure, quibusdam eaque. Laborum incidunt nesciunt
+      facere aperiam quibusdam inventore.
+    </p>
+    <p>
+      Este site foi construído durante a
+      <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura.</a>   
+    </p>
+  </section>
+<section class="portfolio container" id="portfolio">
+    <h2>Projetos</h2>
+
+    <div class="grid">
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+        <img class="img-portfolio" src="./minhas img/work.jpg" alt="Assistente Acadêmico">
+          </figure>
+          <div class="card-back">
+        <h3>Assistente Acadêmico</h3>
+      </div>
+    </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="card">
+        <figure class="card-front">
+        <img class="img-portfolio" src="./minhas img/luna.jpg" alt="Cat Lover">
+      </figure>
+      <div class="card-back">
+        <h3>Cat Lover</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portfolio" src="./minhas img/frontend.jpg" alt="Aprendendo front-end">
+      </figure>
+      <div class="card-back">
+        <h3>Aprendendo front-end</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portfolio" src="./minhas img/pudim.jpg" alt="Cooking">
+      </figure>
+      <div class="card-back">
+        <h3>Cooking</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="card">
+      <figure class="card-front">  
+        <img class="img-portfolio" src="./minhas img/virgos.jpg" alt="Virginiana">
+      </figure>
+      <div class="card-back">
+        <h3>Virginiana</h3>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+  <section class="contato container">
+    <h2>Contato</h2>
+
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/amorabarbosa">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/amora-barbosa-pereira-636a16163/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/_euamoras/">
+        <i class="fab fa-instagram"></i>
+        <a href="https://codepen.io/amoras">
+          <i class="fab fa-codepen"></i>
+        </a>
+      </a>
+    </div>
+  </section>
+ </body>
 </html>
